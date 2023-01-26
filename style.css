@@ -1,0 +1,38 @@
+body {
+    --coin-size: 40vw;
+
+    color: white;
+    background-color: rgb(63, 63, 63)
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.cointext {
+    position: relative;
+    top: 16vw;
+    z-index: 1;
+    font-size: 4vw;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    pointer-events: none;
+    text-shadow: 2px 2px goldenrod;
+}
+.coin {
+    color: hsl(29, 59%, 41%);
+    background-color: hsl(51, 100%, 50%);
+    width: var(--coin-size);
+    height: var(--coin-size);
+    border: 0.8vw solid goldenrod;
+    border-radius: 100%;
+    margin: 3vw;
+    position: absolute;
+}
+.coin:hover {
+    color: hsl(29, 59%, 47%);
+    border-color: rgb(232, 176, 35);
+
+    
+}
+/* transform:  rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+transition-duration: 800ms; */
